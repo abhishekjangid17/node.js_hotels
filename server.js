@@ -6,7 +6,7 @@ require('dotenv').config();
 const bodyParser=require('body-parser');
 app.use(bodyParser.json());
 
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 3002;
 
 app.get('/', function (req, res){
   res.send('welcome to our hotel')
@@ -23,6 +23,6 @@ app.use('/person',personRoutes);
 app.use('/menu',menuItemRoutes);
 
  
-app.listen(3001, ()=>{
-    console.log('listening on port 3001');
+app.listen(3002, ()=>{
+    console.log('listening on port 3002');
   }) 
